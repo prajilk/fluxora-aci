@@ -7,10 +7,14 @@ const Hero = () => {
       style={{ backgroundImage: "url(/images/bg.jpg)" }}
     >
       <div className="relative h-full w-full">
-        <div className="absolute bottom-1/4 z-50 ms-[max(10vw,100px)] w-fit">
-          <h1 className="hero_heading relative text-[3.3vw] capitalize italic text-[#4551a0] after:absolute after:-bottom-5 after:left-0 after:h-[1px] after:w-full after:bg-[radial-gradient(circle,#222B6580,#CA181D00)]">
+        <div className="hero_heading hidden lg:block absolute bottom-1/4 z-50 ms-[max(10vw,100px)] w-fit">
+          <h1 className="relative text-[3.3vw] capitalize italic text-[#4551a0] after:absolute after:-bottom-5 after:left-0 after:h-[1px] after:w-full after:bg-[radial-gradient(circle,#222B6580,#CA181D00)]">
             Le Sur mesure depuis <span className="text-[#640c03]">1998</span>
           </h1>
+        </div>
+        <div className="lg:hidden flex flex-col justify-center items-center h-full">
+          <h1 className="text-[15vw] tracking-widest text-[#222B65]">ÉVASION</h1>
+          <p className="text-[#222B65]/50 font-helvetica font-light text-[6vw] leading-none text-center">Déplacement vers des lieux exceptionnels</p>
         </div>
         <ScrollToAbout />
       </div>

@@ -3,10 +3,10 @@ import ScrollToContact from "./scroll-to-contact";
 
 const Services = () => {
   return (
-    <div id="services" className="relative min-h-screen p-[max(10vw,100px)]">
-      <h1 className="text-[3vw] text-[#222B65]">Nos Services</h1>
+    <div id="services" className="relative min-h-screen p-7 lg:p-[max(10vw,100px)]">
+      <h1 className="text-center tracking-widest lg:tracking-wider lg:text-left text-[7vw] lg:text-[3vw] text-[#222B65]">Nos Services</h1>
       <hr className="my-5 border-black/10" />
-      <div className="mt-10 grid grid-cols-3 gap-3">
+      <div className="mt-10 grid lg:grid-cols-3 gap-3">
         <div className="relative row-span-2 h-full before:absolute before:inset-0 before:bg-gradient-to-t before:from-black before:to-transparent">
           <Image
             src={"/images/service_1.png"}
@@ -21,7 +21,7 @@ const Services = () => {
             }}
           />
           <div className="absolute inset-0 flex flex-col justify-end gap-3 p-5 text-white">
-            <h4 className="text-[1.3vw] capitalize leading-tight">
+            <h4 className="text-[5vw] font-light lg:text-[1.3vw] capitalize leading-tight">
               Gestion des déplacements internationaux
             </h4>
             <p className="font-helvetica font-extralight leading-tight opacity-50">
@@ -45,7 +45,7 @@ const Services = () => {
             }}
           />
           <div className="absolute inset-0 flex flex-col justify-end gap-3 p-5 text-white">
-            <h4 className="text-[1.3vw] capitalize leading-tight">
+            <h4 className="text-[5vw] font-light lg:text-[1.3vw] capitalize leading-tight">
               Réservations de transport
             </h4>
             <p className="font-helvetica font-extralight leading-tight opacity-50">
@@ -68,7 +68,7 @@ const Services = () => {
             }}
           />
           <div className="absolute inset-0 flex flex-col justify-end gap-3 p-5 text-white">
-            <h4 className="text-[1.3vw] capitalize leading-tight">
+            <h4 className="text-[5vw] font-light lg:text-[1.3vw] capitalize leading-tight">
               Suivi clientèle
             </h4>
             <p className="font-helvetica font-extralight leading-tight opacity-50">
@@ -90,7 +90,7 @@ const Services = () => {
             }}
           />
           <div className="absolute inset-0 flex flex-col justify-end gap-3 p-5 text-white">
-            <h4 className="text-[1.3vw] capitalize leading-tight">
+            <h4 className="text-[5vw] font-light lg:text-[1.3vw] capitalize leading-tight">
               Hôtellerie et restauration
             </h4>
             <p className="font-helvetica font-extralight leading-tight opacity-50">
@@ -113,7 +113,7 @@ const Services = () => {
             }}
           />
           <div className="absolute inset-0 flex flex-col justify-end gap-3 p-5 text-white">
-            <h4 className="text-[1.3vw] capitalize leading-tight">
+            <h4 className="text-[5vw] font-light lg:text-[1.3vw] capitalize leading-tight">
               Événementiel et conciergerie
             </h4>
             <p className="font-helvetica font-extralight leading-tight opacity-50">
@@ -123,7 +123,9 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <ScrollToContact />
+      <div className="flex justify-center lg:justify-end">
+        <ScrollToContact />
+      </div>
     </div>
   );
 };

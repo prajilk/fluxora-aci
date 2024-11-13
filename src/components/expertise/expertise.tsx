@@ -4,12 +4,12 @@ const Expertise = () => {
   return (
     <div
       id="expertise"
-      className="min-h-screen space-y-5 bg-[#f1e6d7] p-[max(10vw,100px)]"
+      className="min-h-screen space-y-5 bg-[#f1e6d7] p-7 lg:p-[max(10vw,100px)]"
     >
-      <h1 className="text-[3vw] text-[#222B65]">Notre Expertise</h1>
-      <div className="grid grid-cols-2 gap-10">
+      <h1 className="text-center tracking-widest lg:tracking-wider lg:text-left text-[7vw] lg:text-[3vw] text-[#222B65]">Notre Expertise</h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="space-y-5">
-          <div className="aspect-video w-full overflow-hidden">
+          <div className="aspect-square lg:aspect-video w-full overflow-hidden">
             <Image
               src={"/images/expertise_1.jpg"}
               alt="Flight window view image"
@@ -23,7 +23,7 @@ const Expertise = () => {
               }}
             />
           </div>
-          <div className="aspect-video w-full overflow-hidden">
+          <div className="aspect-square lg:aspect-video w-full overflow-hidden">
             <Image
               src={"/images/expertise_2.png"}
               alt="Flight window view image"
@@ -40,19 +40,19 @@ const Expertise = () => {
         </div>
 
         <div
-          className="space-y-7 border-2 p-14 shadow-sm"
+          className="space-y-7 border-2 p-10 lg:p-14 shadow-sm"
           style={{
             borderImage:
               "linear-gradient(to bottom right, transparent 50%, rgba(0, 0, 0, 0.3) 100%) 1",
           }}
         >
           <h2
-            className="rounded-md px-2 text-center text-[2vw] opacity-60"
+            className="rounded-md whitespace-nowrap px-2 text-center text-[5vw] lg:text-[2vw] text-black/50 opacity-60"
             style={{ boxShadow: "3px 3px 10px 0px rgba(0,0,0,0.2)" }}
           >
             Conciergerie d&apos;Entreprise
           </h2>
-          <div className="space-y-10 pt-10 font-helvetica text-[1.2vw] font-light opacity-50">
+          <div className="space-y-10 pt-5 text-[#4E494380] lg:pt-10 font-helvetica text-[4vw] lg:text-[1.2vw] font-light opacity-50">
             <p>
               Spécialisés dans la gestion complète des besoins événementiels et
               des déplacements <b>VIP</b>, nous offrons aux entreprises un

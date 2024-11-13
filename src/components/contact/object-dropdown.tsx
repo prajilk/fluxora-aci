@@ -33,7 +33,7 @@ const ObjectDropdown = () => {
 
   return (
     <div
-      className={`relative w-full cursor-pointer border-b border-[#505EB9]/30 p-2 text-[1.5vw]`}
+      className={`relative w-full cursor-pointer border-b border-[#505EB9]/30 p-2 text-lg lg:text-[1.5vw]`}
     >
       <div
         className="flex items-center justify-between"

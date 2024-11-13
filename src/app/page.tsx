@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <Expertise />
-      <hr className="mx-auto w-4/5 border-black/10" />
+      <hr className="lg:block hidden mx-auto w-4/5 border-black/10" />
       <Commitments />
       <Services />
       <Contact />
