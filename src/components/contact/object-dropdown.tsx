@@ -24,7 +24,7 @@ const ObjectDropdown = () => {
     } else {
       dropdown.reverse();
     }
-  }, [open]);
+  }, [open, dropdown]);
 
   function handleValue(value: string) {
     setValue(value);

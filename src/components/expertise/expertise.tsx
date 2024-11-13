@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ImageContainer from "./image-container";
 
 const Expertise = () => {
