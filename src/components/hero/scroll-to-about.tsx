@@ -26,7 +26,7 @@ const ScrollToAbout = () => {
     </button>
     <button
       onClick={() => lenis?.scrollTo("#about")}
-      className="absolute lg:hidden bottom-0 left-1/2 -translate-x-1/2 m-[5vw] mb-16 w-[30vw] animate-pulse cursor-pointer"
+      className="absolute lg:hidden bottom-0 left-1/2 -translate-x-1/2 mb-16 w-[30vw] animate-pulse cursor-pointer"
     >
       <DownArrow />
     </button>

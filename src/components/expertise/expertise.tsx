@@ -40,15 +40,19 @@ const Expertise = () => {
         </div>
 
         <div
-          className="space-y-7 border-2 p-10 lg:p-14 shadow-sm"
+          className="space-y-7 border-2 p-7 lg:p-14 shadow-sm"
           style={{
             borderImage:
               "linear-gradient(to bottom right, transparent 50%, rgba(0, 0, 0, 0.3) 100%) 1",
           }}
         >
           <h2
-            className="rounded-md whitespace-nowrap px-2 text-center text-[5vw] lg:text-[2vw] text-black/50 opacity-60"
-            style={{ boxShadow: "3px 3px 10px 0px rgba(0,0,0,0.2)" }}
+            className="rounded-md border py-2 shadow whitespace-nowrap text-center text-[5vw] lg:text-[2vw] text-black/50 opacity-60"
+            style={{
+            borderImage:
+              "linear-gradient(to bottom right, transparent 50%, rgba(0, 0, 0, 0.3) 100%) 1",
+          }}
+            // style={{ boxShadow: "3px 3px 10px 0px rgba(0,0,0,0.2)" }}
           >
             Conciergerie d&apos;Entreprise
           </h2>
