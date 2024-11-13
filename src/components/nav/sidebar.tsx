@@ -2,6 +2,14 @@ import gsap from "gsap";
 import { useLenis } from "lenis/react";
 import Image from "next/image";
 
+const links = [
+  { name: "À Propos d'ACI", href: "#about" },
+  { name: "Notre expertise", href: "#expertise" },
+  { name: "Nos engagements", href: "#commitments" },
+  { name: "Nos services", href: "#services" },
+  { name: "Contact", href: "#contact" },
+];
+
 const Sidebar = () => {
   const lenis = useLenis();
   function closeSidebar() {
@@ -35,7 +43,7 @@ const Sidebar = () => {
 
     gsap.to(".close_btn", {
       duration: 0.3,
-      marginRight: "auto"
+      marginRight: "auto",
     });
     gsap.to(".close_btn_middle", {
       duration: 0.3,
@@ -66,67 +74,34 @@ const Sidebar = () => {
 
   return (
     <div
-      className="sidebar flex flex-col fixed left-0 top-0 z-50 h-screen w-screen lg:w-1/2 bg-[#151933] opacity-0 shadow-[10px_0_100px_-2px_#15193380]"
+      className="sidebar fixed left-0 top-0 z-50 flex h-screen w-screen flex-col bg-[#151933] opacity-0 shadow-[10px_0_100px_-2px_#15193380] lg:w-1/2"
       style={{
         transform: "translateX(-100%)",
       }}
     >
       <button
-        className="close_btn mx-auto block space-y-3 p-5 pt-7 lg:pt-14 text-4xl text-white"
+        className="close_btn mx-auto block space-y-3 p-5 pt-7 text-4xl text-white lg:pt-14"
         onClick={closeSidebar}
       >
         <div className="close_btn_top h-0.5 w-16 bg-[#f1e6d7]"></div>
         <div className="close_btn_middle h-0.5 w-16 translate-x-3 bg-[#f1e6d7]"></div>
         <div className="close_btn_bottom h-0.5 w-16 bg-[#f1e6d7]"></div>
       </button>
-      <ul className="mt-[14vw] lg:mt-[7vw] space-y-6 lg:space-y-4 px-10 lg:ps-[15%] font-helvetica text-[7vw] lg:text-[2vw] font-light uppercase text-white/30 lg:text-white/75">
-        <li
-          onClick={() => {
-            closeSidebar();
-            lenis?.scrollTo("#about");
-          }}
-          className="cursor-pointer border-b lg:border-none border-white/10"
-        >
-          À PROPOS D&apos;ACI
-        </li>
-        <li
-          onClick={() => {
-            closeSidebar();
-            lenis?.scrollTo("#expertise");
-          }}
-          className="cursor-pointer border-b lg:border-none border-white/10"
-        >
-          NOTRE EXPERTISE
-        </li>
-        <li
-          onClick={() => {
-            closeSidebar();
-            lenis?.scrollTo("#services");
-          }}
-          className="cursor-pointer border-b lg:border-none border-white/10"
-        >
-          NOS SERVICES
-        </li>
-        <li
-          onClick={() => {
-            closeSidebar();
-            lenis?.scrollTo("#commitments");
-          }}
-          className="cursor-pointer border-b lg:border-none border-white/10"
-        >
-          NOS ENGAGEMENTS
-        </li>
-        <li
-          onClick={() => {
-            closeSidebar();
-            lenis?.scrollTo("#contact");
-          }}
-          className="cursor-pointer border-b lg:border-none border-white/10"
-        >
-          CONTACT
-        </li>
+      <ul className="mt-[14vw] space-y-6 px-10 font-helvetica text-[7vw] font-light uppercase text-white/30 lg:mt-[7vw] lg:space-y-4 lg:ps-[15%] lg:text-[2vw] lg:text-white/75">
+        {links.map((link, i) => (
+          <li
+            onClick={() => {
+              closeSidebar();
+              lenis?.scrollTo(link.href);
+            }}
+            key={i}
+            className="cursor-pointer border-b border-white/10 uppercase lg:border-none"
+          >
+            {link.name}
+          </li>
+        ))}
       </ul>
-      <div className="mx-auto mt-auto mb-40 w-[50vw] lg:hidden">
+      <div className="mx-auto mb-40 mt-auto w-[50vw] lg:hidden">
         <Image
           src="/images/logo_lite.png"
           alt="Logo plane"
@@ -139,7 +114,7 @@ const Sidebar = () => {
           }}
         />
       </div>
-      <div className="mx-auto w-[15vw] hidden lg:block">
+      <div className="mx-auto hidden w-[15vw] lg:block">
         <Image
           src="/images/logo_plane.png"
           alt="Logo plane"

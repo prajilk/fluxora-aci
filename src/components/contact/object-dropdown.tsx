@@ -37,9 +37,7 @@ const ObjectDropdown = () => {
     >
       <div
         className="flex items-center justify-between"
-        onFocus={() => setOpen(true)}
-        onBlur={() => setOpen(false)}
-        tabIndex={0}
+        onClick={() => setOpen(!open)}
       >
         <span className={`${!value && "text-[#4E494380]"}`}>
           {value ? value : "Objet*"}
