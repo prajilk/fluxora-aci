@@ -65,6 +65,13 @@ const Nav = () => {
       x: "30%",
       ease: "elastic.out(1,1.1)",
     });
+
+    gsap.to(".hero__plane_logo", {
+      duration: 1.3,
+      x: "-50%",
+      opacity: 1,
+      ease: "elastic.out(1,1.1)",
+    })
   }
 
   return (
@@ -79,7 +86,7 @@ const Nav = () => {
           <div className="menu_line_bottom h-0.5 w-16 bg-[#222B65]"></div>
         </button>
 
-        <div className="nav_logo pt-7 lg:pt-0 flex justify-center">
+        <div className="nav_logo pt-7 lg:pt-14 flex justify-center">
           <Image
             src={"/images/logo.png"}
             alt="Logo"
