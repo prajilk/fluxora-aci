@@ -17,14 +17,14 @@ const ObjectDropdown = () => {
   });
 
   useEffect(() => {
-    console.log("calling...");
+    console.log("calling...", open);
 
     if (open) {
       dropdown.play();
     } else {
       dropdown.reverse();
     }
-  }, [open, dropdown]);
+  }, [open]);
 
   function handleValue(value: string) {
     setValue(value);
