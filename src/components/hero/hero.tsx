@@ -9,7 +9,7 @@ const Hero = () => {
     >
       <div className="relative size-full">
         <div className="hero_heading hidden lg:block absolute bottom-0 z-50 ms-[max(10vw,100px)] w-fit">
-          <h1 className="relative text-[3.3vw] capitalize italic text-[#4551a0] after:absolute after:-bottom-5 after:left-0 after:h-[1px] after:w-full after:bg-[radial-gradient(circle,#222B6580,#CA181D00)]">
+          <h1 className="relative text-[2.1vw] capitalize italic text-[#4551a0] after:absolute after:-bottom-5 after:left-0 after:h-[1px] after:w-full after:bg-[radial-gradient(circle,#222B6580,#CA181D00)]">
             Le Sur mesure depuis <span className="text-[#640c03]">1998</span>
           </h1>
           <div className="hero__plane_logo opacity-0 hidden w-[15vw] lg:block" style={{transform: "translateX(-150%)"}}>
@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
         <div className="lg:hidden flex items-center h-full">
           <h1 className="italic text-[10vw] text-center leading-tight relative after:absolute after:-bottom-5 after:h-[1px] capitalize after:w-full after:left-0 after:bg-[radial-gradient(circle,#222B6530,#CA181D00)]">
-            <span className="gradient__dark text-[#222B65">Le Sur mesure depuis </span>
+            <span className="gradient__dark">Le Sur mesure depuis </span>
             <span className="text-[#640c03]">1998</span>
           </h1>
         </div>

@@ -14,7 +14,7 @@ const cards = [
     alt: "Passport Image",
     title: "Réservations de transport",
     description:
-      "Billets de train et d&apos;avion avec accréditation IATA, pour des voyages individuels ou des privatisations.",
+      "Billets de train et d'avion avec accréditation IATA, pour des voyages individuels ou des privatisations.",
   },
   {
     src: "/images/service_3.png",
@@ -28,14 +28,14 @@ const cards = [
     alt: "Bar",
     title: "Hôtellerie et restauration",
     description:
-      "Organisation d&apos;hébergements exclusifs et de services de restauration haut de gamme.",
+      "Organisation d'hébergements exclusifs et de services de restauration haut de gamme.",
   },
   {
     src: "/images/service_5.png",
     alt: "Hotel",
     title: "Événementiel et conciergerie",
     description:
-      "Planification et gestion d&apos;événements, avec un service de conciergerie pour répondre à toutes les demandes.",
+      "Planification et gestion d'événements, avec un service de conciergerie pour répondre à toutes les demandes.",
   },
 ];
 

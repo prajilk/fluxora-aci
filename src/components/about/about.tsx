@@ -8,7 +8,7 @@ const About = () => {
       className="min-h-screen space-y-10 bg-[#f1e6d7] p-7 lg:p-[max(10vw,100px)]"
     >
       <h1 className="text-center text-[7vw] tracking-widest text-[#222B65] lg:text-left lg:text-[3vw] lg:tracking-wider">
-        À Propos d&apos;ACI
+        À Propos d&apos;ACI Voyage
       </h1>
       <div className="grid lg:grid-cols-2">
         <div className="lg:hidden">
@@ -35,12 +35,12 @@ const About = () => {
           <div className="flex justify-center lg:justify-start">
             <Book />
           </div>
-          <h2 className="gradient__dark text-center text-[5vw] lg:text-left lg:text-[2vw]">
+          {/* <h2 className="gradient__dark text-center text-[5vw] lg:text-left lg:text-[2vw]">
             Histoire de ACI
-          </h2>
+          </h2> */}
           <div className="font-helvetica text-[4vw] font-light opacity-50 lg:text-[1.2vw]">
             <p>
-              L&apos;histoire d&apos;ACI Voyages est marquée par son engagement
+              L&apos;histoire d&apos;ACI Voyage est marquée par son engagement
               dans le voyage sur mesure depuis <b>1998.</b>
             </p>
             <p className="mb-10">

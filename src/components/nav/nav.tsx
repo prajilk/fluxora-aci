@@ -62,7 +62,7 @@ const Nav = () => {
     });
     gsap.to(".hero_heading", {
       duration: 1.3,
-      x: "30%",
+      x: "80%",
       ease: "elastic.out(1,1.1)",
     });
 
