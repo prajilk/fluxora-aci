@@ -46,7 +46,7 @@ const Expertise = () => {
             </p>
             <div className="space-y-5">
               <p>
-                De l &apos;organisation de conférences et séminaires prestigieux
+                De l&apos;organisation de conférences et séminaires prestigieux
                 à la planification de voyages VIP exclusifs, nous assurons un
                 accompagnement sur mesure à chaque étape.
               </p>
